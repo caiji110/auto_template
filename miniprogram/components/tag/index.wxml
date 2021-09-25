@@ -1,0 +1,28 @@
+<!--{{component}}.wxml-->
+<scroll-view style="width: 654rpx;margin:0 auto" scroll-x="true">
+  <view class="container_box" style="display: flex; padding: 0 38rpx; width: fit-content;">
+    <block wx:key="index" wx:for="{{ tagList }}">
+      <view style="margin-right:34rpx;margin-top: 26rpx;padding-bottom: 10rpx;">
+        <view 
+          bindtap="onClickSelectTag"
+          data-index="{{ index }}" 
+          class="tag-root {{ index==currentIndex?'isActive':''}}">
+          <view style="background-color:{{ index==currentIndex?'#787CF9':'#979797' }} ;" class="icon">#</view>      
+          <text style="color: {{ index==currentIndex?'#787CF9':'#979797' }};" class="tag-text">{{item}}</text>
+        </view>
+      </view>
+    </block>
+    <view 
+      style="position: relative;margin-top: 25rpx; ">
+      <text 
+        style="background-color:{{ currentIndex==-2?'#787CF9':'#979797' }};" 
+        class="ipt_icon">#</text>
+      <input 
+        style="color: {{ currentIndex==-2?'#787CF9':'#979797' }};border: 1px solid {{ currentIndex==-2?'#787CF9':'#979797' }};" bindfocus="onbindfocusEvent" 
+        bindblur='onbindblur' 
+        model:value="{{ value }}" 
+        class="inp_tag" 
+        type="text" />
+    </view>
+  </view>
+</scroll-view>

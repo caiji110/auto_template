@@ -3,5 +3,17 @@
   width: 300rpx;
   height: 300rpx;
   border: 1px solid red;
-
+}
+.components_list{
+  margin: 30rpx auto;
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.components_list view{
+  margin: 0 10rpx;
+  padding: 10rpx 20rpx;
+  border: 1px solid #aeb0f8;
+  color: #aeb0f8;
+  border-radius: 30rpx;
 }

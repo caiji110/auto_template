@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "customSwiper": "../customSwiper/index"
+    "customSwiper": "../customSwiper/index",
+    "tag": "../tag/index"
   }
 }

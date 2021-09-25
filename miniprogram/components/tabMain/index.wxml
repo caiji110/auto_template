@@ -3,5 +3,12 @@
 <customSwiper bindonGetThemeColorEvent="onGetThemeColorEvent"/>
 <view style="font-size: 25rpx;" >轮播图的主题色，该色可以用于这个页面的主题色或者自定义导航条的颜色</view>
 <view 
-  style="background: linear-gradient( to right, {{ activeColor[1] }} 0%,{{ activeColor[0] }} 30%);"
-  class="box"></view>
+  style="background: linear-gradient( to bottom, {{ activeColor[1] }} 0%,{{ activeColor[0] }} 10%);"
+  class="box"/>
+<view 
+  bindtap="onClickComponentBtn"
+  class="components_list">
+  <view data-index="0">话题标签</view>
+  <view  data-index="1">校园答题认证</view>
+  <view  data-index="2">tab栏</view>
+</view>

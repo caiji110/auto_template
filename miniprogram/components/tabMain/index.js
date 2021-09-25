@@ -19,12 +19,16 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    onGetThemeColorEvent (e) {
-      const { detail } = e
-      const { themeColorArr } = this.data
+    onGetThemeColorEvent(e) {
+      const {
+        detail
+      } = e
+      const {
+        themeColorArr
+      } = this.data
       if (!detail.rgba1) {
-       const index = themeColorArr.findIndex(item => item.current === detail.current)
-       console.log(index);
+        const index = themeColorArr.findIndex(item => item.current === detail.current)
+        console.log(index);
         this.setData({
           activeColor: [themeColorArr[index].rgba1, themeColorArr[index].rgba2]
         })
@@ -35,6 +39,28 @@ Component({
         themeColorArr: themeColorArr,
         activeColor: [detail.rgba1, detail.rgba2]
       })
+    },
+    onClickComponentBtn(e) {
+      const {
+        index
+      } = e.target.dataset
+      switch (index) {
+        case '0':
+          wx.navigateTo({
+            url: '../showTag/index',
+          })
+          break;
+        case '1':
+          wx.navigateTo({
+            url: '../showTag/index',
+          })
+          break;
+        case '2':
+          wx.navigateTo({
+            url: '../showTag/index',
+          })
+          break;
+      }
     }
   }
 })

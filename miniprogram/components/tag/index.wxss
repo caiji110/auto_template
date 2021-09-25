@@ -1,0 +1,76 @@
+/* {{component}}.wxss */
+.inp_tag{
+  width: 190rpx;
+  height: 53rpx;
+  border: 1rpx solid #979797;
+  position: relative;
+  border-radius: 40rpx;
+  background: transparent;
+  display: block;
+  color: #979797;
+  text-align: center;
+  line-height: 57rpx;
+  font-weight: bold;
+  font-size: 24rpx;
+}
+
+.ipt_icon{
+  display: inline;
+  position: absolute;
+  width: 34rpx;
+  height: 34rpx;
+  background-color: #979797;
+  color: #fff;
+  border-radius: 17rpx;
+  font-family: 'YouSheBiaoTiHei';
+  text-align: center;
+  line-height: 34rpx;
+  top: 10rpx;
+  left: 11rpx;
+
+}
+.tag-root {
+  width: max-content;
+  /* border: 1rpx solid #aeb0f8; */
+  border: 1px solid #979797;
+  height: 50rpx;
+  border-radius: 40rpx;
+  background: transparent;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  font-size: 24rpx;
+ 
+  margin-left: 0;
+}
+
+.tag-text {
+  width: max-content;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24rpx;
+  padding-right: 15rpx;
+  font-family: "PingFang SC";
+  line-height: 42rpx;
+  color: #979797;
+
+}
+
+.icon {
+  margin-right: 13rpx;
+  margin-left: 8rpx;
+  /* background-color: #787CF9; */
+  background-color: #979797;
+  color: #fff;
+  width: 34rpx;
+  height: 34rpx;
+  border-radius: 17rpx;
+  font-size: 32rpx;
+  text-align: center;
+  line-height: 34rpx;
+  font-family: 'YouSheBiaoTiHei';
+}
+.isActive{
+  /* background-color: #787CF9; */
+  border: 1rpx solid #aeb0f8; 
+}
