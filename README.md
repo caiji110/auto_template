@@ -1,3 +1,7 @@
+ # 文档：https://phdlikeyou.feishu.cn/docs/doccn4qVmyAcLdaL0F9SLSQG6ee
+ 
+
+ 
  在需要使用组件的页面中的Index.json中的usingComponents进行定义以下为例
  
  
