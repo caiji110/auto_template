@@ -1,3 +1,16 @@
-<!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+
+<!-- 首页 -->
+<view hidden="{{ currentIndex !== 0 }}">
+  <tabMain/> 
+</view>
+
+<!-- 发布页面 -->
+<view hidden="{{ currentIndex !== 1 }}">
+  <createNewInfo/>
+</view>
+
+<!-- 我的页面 -->
+<view hidden="{{ currentIndex !== 2 }}">
+  <profile/>
+</view>
 <tabBar bindtabBarChangeEvent="onClickTabBarBtn" />

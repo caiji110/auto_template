@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    currentIndex: 0
   },
 
   /**
@@ -15,7 +15,10 @@ Page({
 
   },
   onClickTabBarBtn (e) {
-    console.log(e.detail.index);
+    const { index } = e.detail
+    this.setData({
+      currentIndex: index
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

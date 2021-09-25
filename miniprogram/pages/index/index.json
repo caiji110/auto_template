@@ -1,5 +1,8 @@
 {
   "usingComponents": {
-    "tabBar": "../../components/tabBar/index"
+    "tabBar": "../../components/tabBar/index",
+    "tabMain": "../../components/tabMain/index",
+    "profile": "../../components/profile/index",
+    "createNewInfo": "../../components/createNewInfo/index"
   }
 }
