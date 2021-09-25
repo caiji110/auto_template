@@ -1,0 +1,47 @@
+<!--pages/AnswerAuthentication/index.wxml-->
+<view wx:if="{{isshow}}">
+  <view class="header">
+    <view>{{index+1}}/{{QuestionsArray.length}}</view>
+    <view class="time">
+      <view class="cuIcon cuIcon-remind"></view>
+      <view class="end-time">{{ limitTime }}S</view>
+    </view>
+  </view>
+  <swiper
+    bindchange="onChangeCurrent"
+    current="{{current}}"
+    style="height:100vh"
+  >
+    <swiper-item
+      wx:for="{{ QuestionsArray }}"
+      wx:key="index"
+    >
+      <view class="problem-box">
+        <view class="problem">{{ item.question }}</view>
+        <view
+          bindtap="SelectAnswer"
+          class="answer"
+        >
+          <block
+            wx:for="{{ item.options }}"
+            wx:for-index="select"
+            wx:key="select"
+          >
+            <view
+              data-options="{{'selected='+select+'&'+ 'index='+index}}"
+              hover-class="change-color"
+              hover-stay-time="200"
+            >{{ item }}</view>
+          </block>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+<view
+  class="answer-result"
+  wx:if="{{!isshow}}"
+>
+  <view class="contact-likeyou"></view>
+  <view class="right-num">你的正确答题数：<text>{{ nums }}</text></view>
+</view>

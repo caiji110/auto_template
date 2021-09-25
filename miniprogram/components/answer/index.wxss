@@ -1,0 +1,84 @@
+/* pages/AnswerAuthentication/index.wxss */
+
+.answer-contaniers{
+  margin: 50% auto;
+}
+.header{
+  display: flex;
+  margin:160rpx 0 30rpx 86rpx;
+  color: #a979ed;
+  font-family: 'YouSheBiaoTiHei';
+  font-style: oblique;
+  font-weight: bold;
+  font-size: larger;
+  align-items: center;
+}
+.time-icon image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.time{
+  display: flex;
+  margin-left: auto;
+  margin-right: 64rpx;
+}
+.problem-box{
+  width: 580rpx;
+  min-height: 434rpx;
+  border-radius: 30rpx;
+  background: #fff;
+  border: 10rpx solid #a979ed;
+  margin: 0 auto;
+  padding-bottom: 50rpx;
+}
+.problem{
+  font-family: "PingFang SC";
+  font-weight: bold;
+  font-size: 36rpx;
+  text-align: left;
+  color: #a979ed;
+  margin: 35rpx auto 45rpx 35rpx  ;
+}
+.answer{
+  font-family: "Adobe Fan Heiti Std";
+font-weight: normal;
+font-size: 28rpx;
+text-align: left;
+color: #a979ed;
+padding-bottom: 50rpx;
+}
+.answer view{
+  padding: 10rpx 0 10rpx 106rpx; 
+  margin: 15rpx;
+  margin-left: 0;
+  margin-right: 40rpx;
+  
+}
+.change-color{
+ background-color: #8d64c7d2;
+ color: white;
+}
+
+.contact-likeyou{
+  width: 280rpx;
+  height: 224rpx;
+  background: #adadad;
+  margin: 162rpx auto 80rpx auto;
+}
+
+.right-num{
+  width: 290rpx;
+  height: 230rpx;
+  font-family: "PingFang SC";
+font-weight: bold;
+font-size: 36rpx;
+text-align: left;
+color: #12181f;
+margin: 0 auto;
+}
+.right-num text{
+  width: max-content;
+    margin: 20rpx auto;
+    display: block;
+    transform: translateX(-50%);
+}

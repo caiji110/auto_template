@@ -1,2 +1,3 @@
 <!--pages/showTag/index.wxml-->
 <tag bindonSelectedTagEvent = 'onSelectedTagEvent'/>
+<view>该组件可左右滑动，也可自定义输入话题标签，常用于类似树洞，帖子方面</view>

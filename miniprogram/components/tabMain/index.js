@@ -52,7 +52,7 @@ Component({
           break;
         case '1':
           wx.navigateTo({
-            url: '../showTag/index',
+            url: '../question/index',
           })
           break;
         case '2':

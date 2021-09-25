@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "authenModule": "../../components/answer/index"
+  }
+}
