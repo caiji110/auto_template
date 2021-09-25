@@ -2,6 +2,9 @@
 Component({
   /**
    * 组件的属性列表
+   * @tabBarInfo Array Object
+   * [{ name: string ,activeImg: string, unActiveImg: string}] 
+   * 
    */
   properties: {
     tabBarInfo: {

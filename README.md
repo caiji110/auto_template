@@ -1,12 +1,7 @@
-# 云开发 quickstart
-
-这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
-
-- 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
-- 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
-- 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
-
-## 参考文档
-
-- [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
-
+# 在需要使用组件的页面中的Index.json中的usingComponents进行定义以下为例
+# "usingComponents": {
+#    "tabBar": "../../components/tabBar/index"
+#  }
+# 在页面中使用 <tabBar tabBarInfo="{{  }}" />
+# 每个组件都有默认参数，用户可自定义也可以使用默认效果
+# 关于参数的定义，具体请看相关组件的index.js最上方。
