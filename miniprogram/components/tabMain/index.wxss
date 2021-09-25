@@ -1,1 +1,7 @@
 /* components/tabMain/index.wxss */
+.box{
+  width: 300rpx;
+  height: 300rpx;
+  border: 1px solid red;
+
+}

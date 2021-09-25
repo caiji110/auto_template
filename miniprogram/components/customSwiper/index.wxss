@@ -1,0 +1,14 @@
+/* components/customSwiper/index.wxss */
+swiper-item image{
+  width: 670rpx;
+  height: 260rpx;
+}
+swiper-item{
+  width: 670rpx;
+  height: 260rpx;
+}
+swiper{
+  height: 260rpx;
+  width: 670rpx;
+  margin: 0 auto;
+}

@@ -41,7 +41,7 @@
   },
   "appid": "wx0bc1a881b41c4a5c",
   "projectname": "miniprogram-25",
-  "libVersion": "2.14.1",
+  "libVersion": "2.17.3",
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
     "search": {
