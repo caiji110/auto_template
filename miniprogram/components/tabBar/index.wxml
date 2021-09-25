@@ -1,0 +1,25 @@
+<!--components/tabBar/index.js.wxml-->
+<view 
+  bindtap="onClickTabBarBtn"
+  class="tab_bar-container">
+  <block
+    wx:for="{{ tabBarInfo }}"
+    wx:key="index"
+    >
+    <view
+    class="tab_bar-item">
+    <view 
+      class="image_box {{ currentIndex ===  index? 'active': '' }}">
+      <image 
+        data-index="{{ index }}" 
+        hidden="{{ currentIndex !==  index }}"
+        src="{{ item.activeImg }}" />
+      <image 
+        data-index="{{ index }}" 
+        hidden="{{ currentIndex === index }}"
+        src="{{ item.unActiveImg }}" />
+    </view>
+    <text data-index="{{ index }}" >{{ item.name }}</text>
+  </view>
+  </block>
+</view>

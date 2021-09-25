@@ -1,0 +1,30 @@
+.tab_bar-container{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 140rpx;
+  align-items: center;
+  /* border: 1px saddlebrown solid; */
+  border-radius: 30rpx 30rpx 0 0;
+  box-shadow: 0px 1px 3px black;
+}
+.tab_bar-item{
+  flex: 1;
+  text-align: center;
+ 
+}
+.tab_bar-item image{
+  width: 58rpx;
+  height: 58rpx;
+}
+.active{
+  transform: scale(1.2) !important;
+}
+.image_box{
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+}
+text{
+  font-size: 28rpx;
+  font-weight: 600;
+}
